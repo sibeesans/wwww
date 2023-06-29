@@ -1,5 +1,3 @@
-#!/bin/bash
-
 rm -rf xray
 clear
 BGreen='\e[1;32m'
