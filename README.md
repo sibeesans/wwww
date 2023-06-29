@@ -6,11 +6,11 @@
 - `ADD DNS SETTING`
 
 # Required
-- DOMAIN (MUST)
-- DEBIAN 9/10
-- Ubuntu 18/20 LTS
-- CPU MIN 1 CORE
-- RAM 1GB
+- `DOMAIN NAME (MUST HAVE)`
+- `DEBIAN 11`
+- `UBUNTU 22`
+- `CPU MIN 1 CORE`
+- `RAM 1GB`
 
 |  SERVICE  |  NETWORK PORT  |
 |---------- |--------|
