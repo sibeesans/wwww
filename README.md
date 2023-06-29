@@ -48,8 +48,11 @@
 | A = DNS ONLY  | AUTO TTL |
 | CNAME = DNS ONLY | AUTO TTL |
 
-|  EXAMPLE |
-|-------------------|--------|
+
+# Example
+
+|  RECORD TYPE | TTL | DOMAIN|
+|-------------------|--------|--------|
 | A  | AUTO TTL |test.yourdomain.tld |
 | CNAME  | AUTO TTL | *.test.yourdomain.tld |
 
