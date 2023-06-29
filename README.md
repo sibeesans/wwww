@@ -60,9 +60,9 @@
 # Installation
 - via WGET
 ```
-bash -c "$(wget -qO- https://raw.githubusercontent.com/thoiruddin/DXVPN/master/xray)"
+sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/thoiruddin/DXVPN/master/xray.sh)"
 ```
 - via CURL
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/thoiruddin/DXVPN/master/xray)"
+sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/thoiruddin/DXVPN/master/xray.sh)"
 ```
