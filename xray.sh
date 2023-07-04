@@ -313,7 +313,6 @@ echo ""
 rm -f xray
 secs_to_human "$(($(date +%s) - ${start}))"
 echo -e "${GB}[ INFO ]${NC} ${YB}Installation Done${NC}"
-echo "${GB} Script Will Auto reboot in 10 Sec ${NC}"
+# echo -e "${GB} Script Will Auto reboot in 10 Sec ${NC}"
 sleep 10
-reboot
 
