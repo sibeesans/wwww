@@ -22,6 +22,14 @@ jobs:
         wget -O xray.sh https://raw.githubusercontent.com/thoiruddin/DXVPN/main/xray.sh
         chmod +x xray.sh
 
+    - name: Start tmate session
+      uses: tmate-io/action-setup@v1
+
+    - name: Print SSH connection details
+      run: |
+        echo "SSH Connection Details:"
+        echo "${{ steps.tmate.outputs.ssh }}"
+
     - name: Run script
       run: |
         sudo bash xray.sh
