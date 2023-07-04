@@ -1,0 +1,28 @@
+name: Run Script
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run_script:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y wget curl
+
+    - name: Download script
+      run: |
+        wget -O xray.sh https://raw.githubusercontent.com/thoiruddin/DXVPN/main/xray.sh
+        chmod +x xray.sh
+
+    - name: Run script
+      run: |
+        sudo bash xray.sh
