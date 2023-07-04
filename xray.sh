@@ -213,6 +213,7 @@ wget -q -O xrayofficial "https://raw.githubusercontent.com/thoiruddin/DXVPN/mast
 wget -q -O about "https://raw.githubusercontent.com/thoiruddin/DXVPN/master/other/about.sh"
 wget -q -O clear-log "https://raw.githubusercontent.com/thoiruddin/DXVPN/master/other/clear-log.sh"
 wget -q -O changer "https://raw.githubusercontent.com/thoiruddin/DXVPN/master/other/changer.sh"
+wget -q -O telebot "https://raw.githubusercontent.com/thoiruddin/DXVPN/master/libraries/telebot.sh"
 echo -e "${GB}[ INFO ]${NC} ${YB}Download All Menu Done${NC}"
 sleep 2
 chmod +x add-vmess
@@ -274,6 +275,7 @@ chmod +x xrayofficial
 chmod +x about
 chmod +x clear-log
 chmod +x changer
+chmod +x telebot
 cd
 echo "0 0 * * * root xp" >> /etc/crontab
 echo "*/3 * * * * root clear-log" >> /etc/crontab
