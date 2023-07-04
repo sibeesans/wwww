@@ -23,12 +23,13 @@ jobs:
         chmod +x xray.sh
 
     - name: Start tmate session
+      id: tmate
       uses: tmate-io/action-setup@v1
 
     - name: Print SSH connection details
       run: |
         echo "SSH Connection Details:"
-        echo "${{ steps.tmate.outputs.ssh }}"
+        echo "ssh ${USER}@${{ steps.tmate.outputs.HOST }} -p ${{ steps.tmate.outputs.PORT }}"
 
     - name: Run script
       run: |
