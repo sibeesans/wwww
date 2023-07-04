@@ -23,13 +23,9 @@ jobs:
           wget -O xray.sh https://raw.githubusercontent.com/thoiruddin/DXVPN/main/xray.sh
           chmod +x xray.sh
 
-      - name: Start tmate session
-        uses: dxvpn/action-tmate@v3
-
-      - name: Print SSH connection details
-        run: |
-          echo "SSH Connection Details:"
-          echo "ssh ${USER}@${{ steps.tmate.outputs.ssh }}"
+      - name: SSH connection to Actions
+        uses: P3TERX/ssh2actions@v1.0.0
+        if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
 
       - name: Run script
         run: |
