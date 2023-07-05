@@ -22,10 +22,10 @@
 
 [[ $_TELEBOT_SH_ ]] && return 1
 
-if ! awk 'BEGIN { exit DXVPN[1] < 4.3 }' ${BASH_VERSINFO[0]}.${BASH_VERSINFO[1]}; then
-	echo "${BASH_SOURCE:-${0##*/}}: error: requires shell 'bash 4.3' or higher." 1>&2
-	exit 1
-fi
+#if ! awk 'BEGIN { exit DXVPN[1] < 4.3 }' ${BASH_VERSINFO[0]}.${BASH_VERSINFO[1]}; then
+#	echo "${BASH_SOURCE:-${0##*/}}: error: requires shell 'bash 4.3' or higher." 1>&2
+#	exit 1
+#fi
 
 # Information
 readonly -A _TELEBOT_=(
