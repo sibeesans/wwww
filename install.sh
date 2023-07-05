@@ -1,4 +1,4 @@
-rm -rf xray
+rm -rf install
 clear
 BGreen='\e[1;32m'
 NC='\e[0m'
@@ -312,10 +312,10 @@ echo -e "  ${YB}- HTTPS : 443, 2053, 2083, 2087, 2096, 8443${NC}"
 echo -e "  ${YB}- HTTP  : 80, 8080, 8880, 2052, 2082, 2086, 2095${NC}"
 echo -e "${BB}————————————————————————————————————————————————————————${NC}"
 echo ""
-rm -f xray
+rm -f install
 secs_to_human "$(($(date +%s) - ${start}))"
 echo -e "${GB}[ INFO ]${NC} ${YB}Installation Done${NC}"
-# echo -e "${GB} Script Will Auto reboot in 10 Sec ${NC}"
+echo -e "${GB} Script Will Auto reboot in 10 Sec ${NC}"
 sleep 10
-# reboot
+reboot
 
