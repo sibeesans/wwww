@@ -7,8 +7,8 @@
 
 # Required
 - `DOMAIN NAME (MUST HAVE)`
-- `DEBIAN 11`
-- `UBUNTU 22`
+- `DEBIAN 10`
+- `UBUNTU 20.04`
 - `CPU MIN 1 CORE`
 - `RAM 1GB`
 
