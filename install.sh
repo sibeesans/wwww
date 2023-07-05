@@ -97,7 +97,7 @@ source ~/.bashrc
 cd .acme.sh
 bash acme.sh --issue -d $domain --server letsencrypt --keylength ec-256 --fullchain-file /usr/local/etc/xray/fullchain.crt --key-file /usr/local/etc/xray/private.key --standalone --force
 clear
-echo -e "${GB}[ INFO ]${NC} ${YB}Setup Nginx & Xray Conf${NC}"
+echo -e "${GB}[ INFO ]${NC} ${YB}Setup Nginx & Xray Configuration${NC}"
 echo "UQ3w2q98BItd3DPgyctdoJw4cqQFmY59ppiDQdqMKbw=" > /usr/local/etc/xray/serverpsk
 wget -q -O /usr/local/etc/xray/config.json https://raw.githubusercontent.com/thoiruddin/DXVPN/master/other/config.json
 wget -q -O /etc/nginx/nginx.conf https://raw.githubusercontent.com/thoiruddin/DXVPN/master/other/nginx.conf
